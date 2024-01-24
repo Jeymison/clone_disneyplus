@@ -1,12 +1,13 @@
 @use './variaveis';
 @use './hero';
 
+//importando fonte externa
 @font-face {
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
     font-weight: 400;
 }
-
+//importando fonte externa
 @font-face {
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Bold.woff2);
