@@ -10,12 +10,28 @@
 
 <body>
 
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="disneyplus">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <!-- secao hero -->
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="disneyplus">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores histórias em um só lugar.
             </h3>
@@ -61,19 +77,19 @@
                 <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="desencantada">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="the santa clauses">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
             </li>
         </ul>
         <ul data-tab-id="populares" class="shows__list">
@@ -81,19 +97,19 @@
                 <img src="./dist/images/mais_populares/obi_wan.jpg" alt="obi wan">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="bluey">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="cavaleira da lua">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="o incrivel">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_populares/red.jpg" alt="red">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="tudo igual">
             </li>
         </ul>
         <ul data-tab-id="star_plus" class="shows__list">
@@ -101,19 +117,19 @@
                 <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="libertadores">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="belair">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="nba">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="os simpsons">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="premier league">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="the kardashians">
             </li>
         </ul>
     </section>
@@ -167,7 +183,10 @@
 
     <!-- //secao Baixe filmes e séries -->
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
         <div class="image-text-section__text__container image-text-section--image-full-width__text__container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
@@ -352,6 +371,7 @@
         </ul>
     </section>
 
+    <!-- //secao rodape -->
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
